@@ -1,0 +1,10 @@
+package com.collect.test;
+
+public class StackTest {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

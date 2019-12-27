@@ -1,0 +1,9 @@
+package com.collect.test;
+
+public class CollectionTest {
+
+	public static void main(String[] args) {
+
+	}
+}
+

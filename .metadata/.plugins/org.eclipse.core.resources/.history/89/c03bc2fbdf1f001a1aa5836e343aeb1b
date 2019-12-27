@@ -1,0 +1,15 @@
+package testProj;
+
+public class SwipeTrick {
+
+	public static void main(String[] args) {
+		int a = 5;
+		int b = 10;
+		System.out.println("input values : a - "+a+" b - "+b);
+		System.out.println("values : a - "+((a+b) - a)+" b - "+((a+b) - b));
+		Object obj =new Object();
+		System.out.println(obj.hashCode());
+		System.out.println(obj.toString());
+		System.out.println(obj.getClass());
+	}
+}

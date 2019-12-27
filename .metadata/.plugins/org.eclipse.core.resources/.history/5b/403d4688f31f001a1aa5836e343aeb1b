@@ -1,0 +1,7 @@
+package com.collect.test;
+
+public class ArraylistTest {
+	public static void main(String[] args) {
+
+	}
+}

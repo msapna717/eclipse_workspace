@@ -1,0 +1,52 @@
+package com.collect.test;
+
+import java.util.ArrayList;
+import java.util.Enumeration;
+import java.util.List;
+import java.util.Vector;
+
+public class VectorTest {
+
+	public static void main(String[] args) {
+		Vector vt=new Vector();
+		//capacity()
+		System.out.println("capacity: "+vt.capacity());
+		vt.add(10);
+		vt.add(20);
+		vt.add(30);
+		vt.add(40);
+		vt.add(50);
+		System.out.println("size:"+vt.size());
+		System.out.println("Vector collection list is:"+vt);
+		vt.add(10);
+		vt.add(20);
+		vt.add(30);
+		vt.add(40);
+		vt.add(50);
+		vt.add(60);
+		vt.add(70);
+		System.out.println("capacity: "+vt.capacity());
+		System.out.println("Vector collection list is:"+vt);
+		System.out.println("size:"+vt.size());
+		//contains(object)
+		System.out.println("Vector contains 50: "+vt.contains(50));
+		//elementAt(index)
+		System.out.println("element at index 5: "+vt.elementAt(5));
+		//subList(fromIndex, toIndex) fromindex(included), toIndex(excluded)
+		System.out.println("sublist of vector is: "+vt.subList(2, 7));
+		Enumeration enu =vt.elements();
+		System.out.println("The enumeration of values are:");
+		// Displaying the Enumeration 
+        while (enu.hasMoreElements()) { 
+            System.out.println(enu.nextElement()); 
+            }
+     // Creating the sublist vector 
+        List<Integer> sub_list = new ArrayList<Integer>(); 
+  
+        // Limiting the values till 5 
+        sub_list = vt.subList(2, 5); 
+  
+        // Displaying the list data 
+        System.out.println("The resultant values " + vt+"within the sub list: " + sub_list); 
+        } 
+		}

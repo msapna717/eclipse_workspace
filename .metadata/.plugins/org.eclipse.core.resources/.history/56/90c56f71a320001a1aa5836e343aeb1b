@@ -1,0 +1,32 @@
+package com.collect.test;
+
+import java.util.Stack;
+
+public class StackTest {
+
+	public static void main(String[] args) {
+		Stack st=new Stack();
+		System.out.println("Stack capacity: "+st.capacity());
+		st.add(10);
+		st.add(20);
+		st.add(2, 50);
+		st.add(30);
+		st.add(40);
+		st.add(3, 60);
+		//push()
+		st.push(70);
+		st.push(80);
+		st.push(90);
+		System.out.println("Stack is: "+st);
+		//peek()
+		System.out.println("Top: "+st.peek());//Only prints top
+		System.out.println("Stack is: "+st);
+		//pop()
+		System.out.println("Top: "+st.pop());//prints and removes top
+		System.out.println("Stack is: "+st);
+		System.out.println(st.search(50));
+		System.out.println("capacity: "+vt.capacity());
+		
+		}
+
+}
